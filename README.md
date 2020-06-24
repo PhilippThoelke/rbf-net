@@ -1,6 +1,10 @@
 # Visualize the training of an RBF network
 Train an RBF network on different datasets (options: moons, circles, linear, and, or, xor). The number of hidden units determines how many prototype vectors are fitted. All parameters of the RBF network are trained with gradient descent instead of initializing prototype vectors randomly or with k-means centroids and optimizing the remaining parameters with gradient descent. If the learning rate is too high, training will become unstable.
 
+![Example](fig.png)
+
+Green `x` markers show the prototype vectors of the RBF network and the black line shows the decision boundary.
+
 ## Usage
 ```
 python rbfn.py [-h] [-d {moons,circles,linear,and,or,xor}] [-hu HIDDEN_UNITS] [-lr LEARNING_RATE] [-n N_SAMPLES]
