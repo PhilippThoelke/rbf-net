@@ -7,9 +7,9 @@ Green `x` markers show the prototype vectors of the RBF network and the black li
 
 ## Usage
 ```
-rbfn.py [-h] [-d {moons,circles,linear,and,or,xor}] [-nh HIDDEN_UNITS]
-        [-lr LEARNING_RATE] [-n N_SAMPLES]
-        [-po {backpropagation,kmeans,random}]
+python rbfn.py [-h] [-d {moons,circles,linear,and,or,xor}] [-nh HIDDEN_UNITS]
+        	   [-lr LEARNING_RATE] [-n N_SAMPLES]
+        	   [-po {backpropagation,kmeans,random}]
 
 
 optional arguments:
