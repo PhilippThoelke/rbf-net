@@ -69,7 +69,7 @@ def max_dist(vectors):
 
 # initialize prototype vectors
 if args.prototype_optimization == 'backpropagation':
-	xi = tf.Variable(np.random.normal(size=(n_in, n_hidden)))
+	xi = tf.Variable(np.random.uniform(x_train.min(), x_train.max(), size=(n_in, n_hidden)))
 	sigmas = tf.Variable(np.ones(n_hidden))
 elif args.prototype_optimization == 'kmeans':
 	xi = cluster.KMeans(n_clusters=n_hidden).fit(x_train).cluster_centers_.T
